@@ -2,6 +2,9 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown")
 
+// Path for generated README
+const writePath = "./output/README.md"
+
 // Questions to gather information for building readme.
 const questions = [
     {
@@ -13,11 +16,28 @@ const questions = [
         type: "editor",
         message: "Give a description.",
         name: "description"
+    },
+    {
+        type: "editor",
+        message: "Provide installation instructions.",
+        name: "installation"
+    },
+    {
+        type: "editor",
+        message: "Provide instructions for use. Remember to include visual aids.",
+        name: "usage"
+    },
+    {
+        type: "editor",
+        message: "How can people contribute?",
+        name: "contributing"
+    },
+    {
+        type: "editor",
+        message: "How can people test the code?",
+        name: "tests"
     }
 ];
-
-// Path for generated README
-const writePath = "./output/README.md"
 
 // Function call to initialize app
 init();
