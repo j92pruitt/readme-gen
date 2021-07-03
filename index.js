@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown")
 
 // Questions to gather information for building readme.
 const questions = [
@@ -18,9 +19,8 @@ init();
 
 function init() {
     inquirer.prompt(questions)
-        .then(
-            ( {title} ) => writeToFile(title)
-        )
+        .then( generateMarkdown )
+        .then( writeToFile )
 }
 
 // Function to write README file
