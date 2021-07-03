@@ -8,6 +8,11 @@ const questions = [
         type: "input",
         message: "What is the title?",
         name: "title"
+    },
+    {
+        type: "editor",
+        message: "Give a description.",
+        name: "description"
     }
 ];
 
