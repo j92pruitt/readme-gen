@@ -10,19 +10,22 @@ const questions = [
     }
 ];
 
+// Path for generated README
+const writePath = "./output/README.md"
+
 // Function call to initialize app
 init();
 
 function init() {
     inquirer.prompt(questions)
         .then(
-            ( {title} ) => writeToFile("./output/README.md", title)
+            ( {title} ) => writeToFile(title)
         )
 }
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, handleError)
+// Function to write README file
+function writeToFile(data) {
+    fs.writeFile(writePath, data, handleError)
 }
 
 function handleError(error) {
