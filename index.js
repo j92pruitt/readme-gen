@@ -36,6 +36,27 @@ const questions = [
         type: "editor",
         message: "How can people test the code?",
         name: "tests"
+    },
+    {
+        type: "list",
+        choices: [
+            "No License, all rights reserved.",
+            "MIT License - simple and highly permisive.",
+            "Mozilla Public License - private use with some open source maintanence.",
+            "GNU GPLv3 License - keeps code open source.",
+        ],
+        message: "What license would you like to use.",
+        name: "license"
+    },
+    {
+        type: "input",
+        message: "What is your Github Username?",
+        name: "github"
+    },
+    {
+        type: "input",
+        message: "What email can people reach you at with questions?",
+        name: "email"
     }
 ];
 
