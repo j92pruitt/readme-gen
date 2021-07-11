@@ -5,6 +5,11 @@
 
 This is a simple command line program using Inquirer to get information about the readme from the user in order to generate a basic README for any project. The program is written using javascript and executed using Node.
 
+[![Screenshot of Readme Generator](./assets/images/screenshot.png)](https://drive.google.com/file/d/1UVDFqL3VmAcPGnwhKXp2FXKHHHCR7l2k/view "Readme Generator Demo")
+
+
+Demo of the program at https://drive.google.com/file/d/1UVDFqL3VmAcPGnwhKXp2FXKHHHCR7l2k/view
+
 ## Table of Contents
 
 - [Installation](#installation)
